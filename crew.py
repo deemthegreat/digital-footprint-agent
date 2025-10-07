@@ -1,7 +1,7 @@
 # crew.py (Simplified code to define the workflow)
 from crewai import Agent, Task, Crew, Process
 from langchain_community.llms import Ollama
-from .tools import setup_search_tool # Assuming you put the search tool in tools.py
+from tools import setup_search_tool # Assuming you put the search tool in tools.py
 
 # 1. Setup the Local LLM (The Zero-Cost Brain)
 ollama_llm = Ollama(model="mistral", base_url="http://localhost:11434")
